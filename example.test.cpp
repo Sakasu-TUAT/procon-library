@@ -5,6 +5,7 @@
 #define REP(i, n) for (int i = 0; (i) < (int)(n); ++ (i))
 #define ALL(x) std::begin(x), std::end(x)
 using namespace std;
+//yeah!
 
 int main() {
     int n; cin >> n;
