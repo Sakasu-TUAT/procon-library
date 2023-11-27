@@ -1,6 +1,11 @@
 ---
 data:
   libraryCategories:
+  - name: algorithm
+    pages:
+    - icon: ':warning:'
+      path: algorithm/RangeSet.hpp
+      title: Range Set
   - name: data-structure
     pages:
     - icon: ':warning:'
