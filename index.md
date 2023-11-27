@@ -1,10 +1,10 @@
 ---
 data:
   libraryCategories:
-  - name: datastructure
+  - name: data-structure
     pages:
     - icon: ':warning:'
-      path: datastructure/binaryindexedtree.hpp
+      path: data-structure/BinaryIndexedTree.hpp
       title: Binary Indexed Tree
   verificationCategories:
   - name: .

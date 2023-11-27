@@ -8,7 +8,7 @@ data:
   _verificationStatusIcon: ':warning:'
   attributes:
     links: []
-  bundledCode: "#line 1 \"datastructure/binaryindexedtree.hpp\"\n/* BIT: \u533A\u9593\
+  bundledCode: "#line 1 \"data-structure/BinaryIndexedTree.hpp\"\n/* BIT: \u533A\u9593\
     \u548C\u306E\u66F4\u65B0\u3084\u8A08\u7B97\u3092\u884C\u3046\u69CB\u9020\u4F53\
     \n    \u521D\u671F\u5024\u306F a_1 = a_2 = ... = a_n = 0\n    \u30FBadd(i,x):\
     \ a_i += x \u3068\u3059\u308B\n    \u30FBsum(i): a_1 + a_2 + ... + a_i \u3092\u8A08\
@@ -43,24 +43,22 @@ data:
     \ i) { return sum_sub(0, i) + sum_sub(1, i) * i; }\n};"
   dependsOn: []
   isVerificationFile: false
-  path: datastructure/binaryindexedtree.hpp
+  path: data-structure/BinaryIndexedTree.hpp
   requiredBy: []
-  timestamp: '2023-11-27 19:10:49+09:00'
+  timestamp: '2023-11-27 19:30:43+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
-documentation_of: datastructure/binaryindexedtree.hpp
+documentation_of: data-structure/BinaryIndexedTree.hpp
 layout: document
 title: Binary Indexed Tree
 ---
 
-# Binary Indexed Tree (またはフェニック木) 
+# Binary Indexed Tree (フェニック木) 
 
 数列 $a1,a2,a3,⋯,an$ が与えられた時に、以下のようなことがそれぞれ $O(\log N)$ で実現できるデータ構造のことです。
 
 - $i$ と $x$ が与えられたとき、$ai$ に $x$ を加算する
 - $i$ が与えられたとき、$a1+a2+⋯+ai$ を求める
-
-を $O(\log N)$ で求めることが出来るデータ構造です。
 
 ## コンストラクタ
 
