@@ -1,24 +1,20 @@
-#define PROBLEM "https://onlinejudge.u-aizu.ac.jp/courses/lesson/1/ALDS1/4/ALDS1_4_B"
-#include <algorithm>
-#include <iostream>
-#include <vector>
-#define REP(i, n) for (int i = 0; (i) < (int)(n); ++ (i))
-#define ALL(x) std::begin(x), std::end(x)
-using namespace std;
-// Yeah
+# Problem: https://onlinejudge.u-aizu.ac.jp/courses/lesson/1/ALDS1/4/ALDS1_4_B
+from bisect import bisect_left
 
-int main() {
-    int n; cin >> n;
-    vector<int> s(n);
-    REP (i, n) {
-        cin >> s[i];
-    }
-    int q; cin >> q;
-    int cnt = 0;
-    while (q --) {
-        int t_i; cin >> t_i;
-        cnt += binary_search(ALL(s), t_i);
-    }
-    cout << cnt << endl;
-    return 0;
-}
+def main():
+    n = int(input())
+    s = list(map(int, input().split()))
+    q = int(input())
+    
+    s.sort()  # Pythonのリストをソート
+
+    cnt = 0
+    for _ in range(q):
+        t_i = int(input())
+        # bisect_leftで二分探索
+        cnt += bisect_left(s, t_i) < n and s[bisect_left(s, t_i)] == t_i
+    
+    print(cnt)
+
+if __name__ == "__main__":
+    main()
